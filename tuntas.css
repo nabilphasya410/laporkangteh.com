@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: 'Nunito', Sans-Serif;
+  color: white;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+p {
+  font-family: 'Nunito', Sans-Serif;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.body {
+  height: auto; /* Ubah dari 600px ke auto */
+  min-height: 200px; /* Atur minimum height */
+  border-style: outset;
+  border-radius: 8px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 18px 2px rgba(86, 114, 163, 0.8);
+}
+
+.footer {
+  font-family: 'Roboto', Sans-Serif;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

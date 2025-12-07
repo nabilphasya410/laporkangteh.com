@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAPOR KANG/TEH</title>
+  <link href="stylekom.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+      <img src="logo_osis.png" class="logo kiri" alt="logo kiri">
+      <h1 class="h1">LAPOR KANG/TEH</h1>
+      <img src="logo_mpk.png" class="logo kanan" alt="logo kanan">
+    <div class="about">
+      <h3 class="h3">Program “Lapor Kang/Teh” hadir sebagai wadah untuk menampung aspirasi, kritik, dan saran dari seluruh siswa SMAN 1 BUNGURSARI. Yuk, isi formulir ini dengan sopan dan jelas. Setiap aspirasi akan ditangani dengan bijak serta dijamin kerahasiaannya. Aspirasi kalian sangat berarti untuk menciptakan sekolah yang lebih nyaman dan maju!</h3>
+    </div>
+  </header>
+  <main>
+    <div class="body">
+      <h2 class="h2">Formulir Pelaporan</h2>
+      <form action="proses.php" method="post" class="form-container">
+        <div class="row">
+          <label for="nama">Nama:</label>
+          <input id="nama" placeholder="Masukkan Nama Lengkap Anda..." type="text" name="nama" required>
+        </div>
+        <div class="row">
+          <label for="email">Email:</label>
+          <input id="email" placeholder="Masukka Email yang aktif..." type="email" name="email" required>
+        </div>
+        <div class="row">
+          <label for="kelas">Kelas:</label>
+          <input id="kelas" placeholder="Contoh: 12 Ilmu Formal" type="text" name="kelas" required>
+        </div>
+        <div class="row">
+          <label for="kategori">Kategori Laporan:</label>
+          <select id="kategori" name="kategori" required>
+            <option value="" disabled selected>Pilih Kategori Laporan</option>
+            <option value="Kritik/Saran untuk OSIS">Kritik/Saran untuk OSIS</option>
+            <option value="Kritik/Saran untuk MPK">Kritik/Saran untuk MPK</option>
+            <option value="Kritik/Saran untuk Ekstrakurikuler">Kritik/Saran untuk Ekstrakurikuler</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="aspirasi">Aspirasi:</label>
+          <textarea id="aspirasi" placeholder="Tulis Aspirasimu..." name="aspirasi" rows="5" required></textarea>
+        </div>
+        <button class="kirim" type="submit" name="submit">Kirim</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025. Hak cipta dilindungi.</p>
+  </footer>
+</body>
+</html>
